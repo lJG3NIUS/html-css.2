@@ -11,12 +11,20 @@
         }
     </style>
 </head>
+
 <body>
+    
+    
     <h1>meu primeiro formulário</h1>
-    <form>
-        <p>Nome: <input type="text" name="nome" id="nome"></p>
-    <p>Sobrenome: <input type="text" name="sobrenome" id="sobrenome"></p>
-    <input type="submit" value="Enviar">
+    <form action="cadastro.php" 
+    method="post"  autocomplete="off">
+        <p><label for="inome">Nome:</label>
+             <input type="text" name="nome" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome:</label>
+             <input type="text" name="sobrenome" id="isobrenome"></p>
+        <input type="submit" value="Enviar">
     </form>
+    <!-- method : get (até 3000 bytes/letras) é o padrao,o que você escreveu aparece na url
+    method : post,o que você escreveu não aparece na url-->
 </body>
 </html>
