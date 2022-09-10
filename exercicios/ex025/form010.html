@@ -7,15 +7,27 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>exemplo</h1>
-    <form action="cadastro.php" method="get">
+    <form action="cadastro.php" method="get" >
         <p>
-
+            <label for="iano">ano que nasceu?</label>
+            <input type="number" name="ano" id="iano" min="1900" max="2022" oninput="calcIdade()">
         </p>
+        <p>
+            <label for="iidade">idade:</label>
+            <output id="iidade">0</output>
+        </p>
+
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
         </p>
     </form>
+
+    <script>
+        function calcIdade(){
+            let anual = new Date().getFullYear()
+            iidade.innerHTML = Number(anual) - Number(iano.value)
+        }
+    </script>
 </body>
 </html>
