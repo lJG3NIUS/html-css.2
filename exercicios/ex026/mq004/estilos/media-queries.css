@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+/* todas as demais mídias */
+
+/*typical device breakpoints
+telas celular :360 x 640
+375 x 667
+360 x 720
+
+celular iphone: 375 x 812 
+
+celular pixel 2:411 x 731
+
+tablet: 768 x 1024
+
+computador portátil:1366 x 768
+
+desktop de alta resolução ou laptop:1920 x 1080
+*/
+
+@media print{/*impressão*/
+
+
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+
+
+    main{
+        border: 1px solid black;
+        width: 90vw;
+    }
+
+    main::after{
+        content: 'Essa versão veio do site www.G3nius.com';
+        text-decoration: overline;
+        font-size: 0.6em;
+    }
+
+    main h1{
+        font-size: 1.3em;
+        text-shadow: none;
+        color: black;
+    }
+
+    img#phone{display:none;}
+    img#tv{display: none;}
+    img#tablet{display: none;}
+    img#print{display: block;}
+    img#pc{display:none ;}
+}
+
+@media screen and (min-width:768px) and (max-width: 992px){
+    /*Tablet*/
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    img#phone{display:none;}
+    img#tv{display: none;}
+    img#tablet{display: block;}
+    img#print{display: none;}
+    img#pc{display: none;}
+    
+}
+
+@media screen and (min-width:992px) and (max-width:1200px){
+/*desktop*/
+
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    img#phone{display:none;}
+    img#tv{display: none;}
+    img#tablet{display: none;}
+    img#print{display: none;}
+    img#pc{display:block ;}
+}
+
+@media screen and (min-width:1200px) {
+/*grande tela*/
+
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    
+    }
+
+    main{
+        width: 700px;
+    }
+
+    img#phone{display:none;}
+    img#tv{display: block;}
+    img#tablet{display: none;}
+    img#print{display: none;}
+    img#pc{display:none ;}
+}
