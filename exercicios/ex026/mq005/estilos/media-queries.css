@@ -18,10 +18,12 @@ Grandes telas: acima 1200px
 
     menu{
         display: block;
+        
     }
 
     menu > ul > li{
         display: inline-block;
+        padding: 0px;
     }
 
     main{

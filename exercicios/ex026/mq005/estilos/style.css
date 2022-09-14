@@ -39,10 +39,12 @@ span#burguer:hover{
 
 menu{
     display: none;
+    
 }
 
 menu > ul{
     list-style-type:none;
+    
 }
 
 menu > ul > li > a{
@@ -53,6 +55,7 @@ menu > ul > li > a{
     color: white;
     text-align: center;
     border: 1px solid rgba(187, 184, 184, 0.589);
+    
 }
 
 menu a:hover{
